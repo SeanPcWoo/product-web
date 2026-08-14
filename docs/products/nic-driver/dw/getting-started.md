@@ -1,14 +1,12 @@
 # 快速开始
 
-## 1. 从 Armory 下载固件包
+## 1. 从代码仓库获取源码
 
-通过以下命令从 **Armory** 平台下载驱动固件包：
+通过以下仓库获取 DW 网卡驱动和 PHY 驱动源码：
 
-```bash
-armory get @nic_drv/dw_nic_drv@[版本号]
-```
+[DW 网卡驱动](http://10.7.100.21:8000/pci/libdrv_dwmac)。
 
-详细内容参考：[DW 网卡驱动](http://10.7.1.31/acohub/armory/org/package/nic_drv/dw_nic_drv/)。
+[PHY 驱动](http://10.7.100.21:8000/driver_library/libdrv_net_compat)。
 
 ## 2. 添加并链接静态库
 
@@ -20,7 +18,7 @@ DW 网卡驱动包含 3 个静态库，根据目标架构平台将其添加到 B
 |--------|------|
 | `libstmicro.a` | DW 网卡驱动库 |
 | `liblinuxcompat.a` | Linux 兼容层库 |
-| `libdrv_net_compat.a` | 网卡兼容库 |
+| `libdrv_net_compat.a` | PHY 驱动库 |
 
 ### 链接静态库
 

@@ -4,7 +4,17 @@ IgH EtherCAT Master 是 EtherLab 提供的开源 EtherCAT 主站实现。本工�
 
 EtherCAT 是面向工业自动化的实时以太网技术，典型用于伺服控制、分布式 I/O、运动控制、机器人、测试测量和工业现场总线替代等场景。它以标准以太网帧为基础，通过主站周期性收发过程数据，实现高实时性和高同步精度的现场设备通信。
 
-代码仓库：[SylixOS_IgH](http://10.7.100.21:8000/industry/IndustryMiddleWare/SylixOS_IgH/-/tree/v1.6.3)
+## Armory 获取
+
+<div class="armory-card">
+  <div class="armory-card-title">从 Armory 获取 SylixOS_IgH 套件</div>
+
+```bash
+armory install @sylixos-middleware/igh@1.0.0
+```
+
+  <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/sylixos-middleware/igh/1.0.0" target="_blank" rel="noopener noreferrer">SylixOS_IgH Armory 包详情</a></p>
+</div>
 
 ## 工程组成
 
@@ -85,3 +95,28 @@ IgH 主站应用通常包含两个阶段：初始化配置和周期运行。
 - [EtherLab IgH EtherCAT Master 仓库](https://gitlab.com/etherlab.org/ethercat)
 - [IgH EtherCAT Master 官方文档 PDF](https://gitlab.com/etherlab.org/ethercat/-/jobs/artifacts/stable-1.5/raw/pdf/ethercat_doc.pdf?job=pdf)
 - [EtherCAT Technology Group 技术介绍](https://www.ethercat.org/en/technology.html)
+
+<style>
+.armory-card {
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(59,130,246,.08), rgba(34,197,94,.05));
+}
+.armory-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
+  margin-bottom: 0.4rem;
+}
+.armory-card p {
+  margin: 0.45rem 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+}
+.armory-card-link a {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+</style>

@@ -26,6 +26,15 @@
 | `phc2sys` | 在 PHC（网卡硬件时钟）与 `CLOCK_REALTIME` 等系统时钟之间做同步 |
 | `pmc` | 通过 PTP 管理消息查询或配置 `ptp4l` 的数据集和端口状态 |
 
+## 安装
+
+从 Armory 获取 `linuxptp` 包并安装：
+
+```bash
+armory install @nic_drv/linuxptp@4.4.2
+```
+ <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/nic_drv/linuxptp/4.4.2" target="_blank" rel="noopener noreferrer">linuxptp Armory 包详情</a></p>
+
 ## 基础概念
 
 | 概念 | 说明 |

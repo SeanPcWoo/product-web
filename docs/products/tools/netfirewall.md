@@ -42,6 +42,16 @@ import ChangelogEntry from '../../.vitepress/theme/components/ChangelogEntry.vue
 指定网卡收包时按规则放行或丢弃报文
 ```
 
+## 安装
+
+从 Armory 获取 `netfirewall` 包并安装：
+
+```bash
+armory get @nic_drv/netfw@1.1.1
+```
+ <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/nic_drv/netfw/1.1.1" target="_blank" rel="noopener noreferrer">netfirewall Armory 包详情</a></p>
+
+
 ## 功能特性
 
 ### 防火墙框架

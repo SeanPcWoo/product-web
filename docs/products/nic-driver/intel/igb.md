@@ -60,7 +60,6 @@ const boards = [
     <h1 class="plat-title">igb 系列</h1>
     <p class="plat-mfr">Intel · PCIe 千兆 · i210 / i211 / i350</p>
     <VersionBadge product="nic-driver/igb" />
-    <a class="armory-link" href="http://10.7.1.31/acohub/armory/package/nic_drv/intel_nic_drv/1.0.1?tab=versions" target="_blank">Armory 获取</a>
   </div>
   <div class="plat-hero-stats">
     <div class="plat-stat"><span class="ps-val">1 GbE</span><span class="ps-label">网口速率</span></div>
@@ -70,8 +69,9 @@ const boards = [
   </div>
 </div>
 
-<ArmoryFetch pkg="nic-intel-igb" command="armory get @nic_drv/intel_nic_drv@1.0.1" 
-detailHref="armory get @nic_drv/intel_nic_drv@1.0.1" />
+## 源码获取
+
+[Intel 网卡驱动](http://10.7.100.21:8000/pci/libnetcard/-/tree/intel)。
 
 ## 安装与加载
 
@@ -151,8 +151,6 @@ igb 驱动支持以下 Intel 以太网控制器：
 }
 .plat-breadcrumb { font-size: 0.78rem; color: var(--vp-c-text-3); margin-bottom: 0.5rem; }
 .plat-breadcrumb a { color: var(--vp-c-brand-1); text-decoration: none; }
-.armory-link { display: inline-block; margin-left: 0.5rem; font-size: 0.68rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; background: rgba(59,130,246,.12); color: var(--vp-c-brand-1); text-decoration: none !important; }
-.armory-link:hover { opacity: 0.8; }
 .plat-title { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 0.25rem; }
 .plat-mfr { font-size: 0.85rem; color: var(--vp-c-text-3); margin: 0 0 0.75rem; }
 .plat-badge { font-size: 0.68rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
