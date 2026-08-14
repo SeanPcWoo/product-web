@@ -23,6 +23,8 @@ export default defineConfig({
         text: '产品',
         items: [
           { text: '网卡驱动库', link: '/products/nic-driver/' },
+          { text: '网络产品', link: '/products/network-products/' },
+          { text: '网络协议', link: '/products/protocols/' },
           { text: '网络工具', link: '/products/tools/' },
           { text: '开发工具', link: '/products/dev-tools/' },
         ],
@@ -45,6 +47,10 @@ export default defineConfig({
           items: [
             { text: '驱动概述', link: '/products/nic-driver/dw/' },
             { text: '快速开始', link: '/products/nic-driver/dw/getting-started' },
+            { text: '支持架构与平台', link: '/products/nic-driver/dw/platform-support' },
+            { text: 'MII 总线二次开发', link: '/products/nic-driver/dw/mii-bus-development' },
+            { text: '共用 MDIO 配置', link: '/products/nic-driver/dw/shared-mdio' },
+            { text: '常见问题分析', link: '/products/nic-driver/dw/faq' },
             { text: '更新日志', link: '/products/nic-driver/dw/changelog' },
             {
               text: '平台支持',
@@ -62,8 +68,15 @@ export default defineConfig({
           text: '沐创系列',
           collapsed: true,
           items: [
-            { text: 'rnp（N10 万兆）', link: '/products/nic-driver/mucse/rnp' },
-            { text: 'rnp500（N500 万兆）', link: '/products/nic-driver/mucse/rnp500' },
+            { text: 'N400（千兆）', link: '/products/nic-driver/mucse/rnp' },
+            { text: 'N500（千兆）', link: '/products/nic-driver/mucse/rnp500' },
+          ],
+        },
+        {
+          text: '飞腾系列',
+          collapsed: true,
+          items: [
+            { text: 'PHYTIUM（FTD3000）', link: '/products/nic-driver/phytium' },
           ],
         },
         {
@@ -87,12 +100,20 @@ export default defineConfig({
           text: '裕太微系列',
           collapsed: true,
           items: [
-            { text: 'YT6801（2.5GbE）', link: '/products/nic-driver/yt6801' },
+            { text: 'YT6801（千兆）', link: '/products/nic-driver/yt6801' },
           ],
         },
         {
           text: '开发文档',
           items: [
+            {
+              text: '性能优化',
+              collapsed: true,
+              items: [
+                { text: '吞吐量优化', link: '/products/nic-driver/optimization/throughput' },
+                { text: '通信时延优化', link: '/products/nic-driver/optimization/latency' },
+              ],
+            },
             { text: '问题反馈', link: '/products/nic-driver/feedback' },
             { text: '问题追踪', link: '/products/nic-driver/issue-tracker' },
           ],
@@ -122,7 +143,62 @@ export default defineConfig({
             { text: 'vndbind（虚拟网卡绑定）', link: '/products/tools/vndbind' },
             { text: 'xgro（软件 GRO）', link: '/products/tools/xgro' },
             { text: 'netfirewall（网络防火墙）', link: '/products/tools/netfirewall' },
+            { text: 'linuxptp（时间同步）', link: '/products/tools/linuxptp' },
             { text: 'pppd（PPP 服务器）', link: '/products/tools/pppd' },
+          ],
+        },
+      ],
+      '/products/network-products/': [
+        {
+          text: '网络产品',
+          items: [
+            { text: '产品列表', link: '/products/network-products/' },
+          ],
+        },
+        {
+          text: 'FRRouting（动态路由）',
+          collapsed: false,
+          items: [
+            { text: '概述', link: '/products/network-products/frr/' },
+            { text: '快速开始', link: '/products/network-products/frr/quick-start' },
+            { text: '软件架构', link: '/products/network-products/frr/architecture' },
+            { text: '配置与使用', link: '/products/network-products/frr/configuration' },
+          ],
+        },
+        {
+          text: 'ring-suit（环网冗余）',
+          collapsed: false,
+          items: [
+            { text: '概述', link: '/products/network-products/ring-suit/' },
+            { text: '快速开始', link: '/products/network-products/ring-suit/quick-start' },
+            { text: '配置指南', link: '/products/network-products/ring-suit/configuration' },
+            { text: '选型指南', link: '/products/network-products/ring-suit/selection' },
+            { text: '收敛测试', link: '/products/network-products/ring-suit/convergence' },
+          ],
+        },
+      ],
+      '/products/protocols/': [
+        {
+          text: '网络协议',
+          items: [
+            { text: '模块概述', link: '/products/protocols/' },
+            {
+              text: 'IgH EtherCAT',
+              collapsed: false,
+              items: [
+                { text: '协议栈概述', link: '/products/protocols/igh/' },
+                { text: '快速开始', link: '/products/protocols/igh/quick-start' },
+                { text: '应用开发指南', link: '/products/protocols/igh/application-guide' },
+              ],
+            },
+            {
+              text: 'MQTT',
+              collapsed: false,
+              items: [
+                { text: '协议说明', link: '/products/protocols/mqtt/' },
+                { text: 'Paho 使用指导', link: '/products/protocols/mqtt/paho-usage' },
+              ],
+            },
           ],
         },
       ],
@@ -173,3 +249,4 @@ export default defineConfig({
     },
   },
 })
+

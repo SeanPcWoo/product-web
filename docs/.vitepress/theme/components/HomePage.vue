@@ -24,7 +24,7 @@
             <a :href="withBase('/changelog')" class="btn-ghost">更新日志</a>
           </div>
           <div class="hero-stats">
-            <div class="stat"><span class="stat-num">3</span><span class="stat-label">核心产品</span></div>
+            <div class="stat"><span class="stat-num">5</span><span class="stat-label">核心产品</span></div>
             <div class="stat-div" />
             <div class="stat"><span class="stat-num">20+</span><span class="stat-label">支持芯片</span></div>
             <div class="stat-div" />
@@ -64,20 +64,20 @@
               <span class="card-link">了解详情 <ArrowRight :size="13" class="card-arrow" /></span>
             </div>
           </a>
-          <!-- 即将推出 占位卡片 -->
-          <div class="card card--coming">
+          <a :href="withBase('/products/network-products/')" class="card">
             <div class="card-top">
-              <div class="card-icon-wrap card-icon-wrap--coming">
-                <Rocket :size="26" :stroke-width="1.5" class="card-icon-svg card-icon--coming" />
+              <div class="card-icon-wrap">
+                <Rocket :size="26" :stroke-width="1.5" class="card-icon-svg" />
               </div>
-              <span class="card-tag tag-coming">即将推出</span>
+              <span class="card-tag tag-active">活跃开发</span>
             </div>
             <h3 class="card-title">网络产品</h3>
-            <p class="card-desc">面向市场的独立网络产品，正在规划中，敬请期待。</p>
+            <p class="card-desc">面向工业现场与行业场景提供独立网络产品与解决方案，覆盖环网冗余、动态路由和链路可靠性等能力。</p>
             <div class="card-footer">
-              <span class="card-coming-hint">Coming Soon</span>
+              <code class="card-ver">ring-suit / frr</code>
+              <span class="card-link">了解详情 <ArrowRight :size="13" class="card-arrow" /></span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -183,6 +183,11 @@ const products = [
     icon: Cpu, title: '网卡驱动库', tag: '活跃开发', tagClass: 'tag-active',
     desc: '支持 DW GMAC、Intel igb/igc/i40e、Realtek RTL8111、Cadence GEM 等，各驱动独立版本，通过 Armory 按需安装。',
     version: null, latestPkg: 'dw-gmac-rk3568 1.2.0', link: '/products/nic-driver/'
+  },
+  {
+    icon: Network, title: '网络协议', tag: '活跃开发', tagClass: 'tag-active',
+    desc: '面向 SylixOS 网络业务场景提供协议与协议适配能力，覆盖时间同步、链路管理和行业协议扩展。',
+    version: '0.1.0', link: '/products/protocols/'
   },
   {
     icon: Terminal, title: '网络工具', tag: '活跃开发', tagClass: 'tag-active',
@@ -375,6 +380,7 @@ const features = [
 .card-tag { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
 .tag-stable { background: var(--tag-stable-bg); color: var(--tag-stable-color); }
 .tag-active  { background: var(--tag-active-bg);  color: var(--tag-active-color); }
+.tag-dev     { background: rgba(59,130,246,.1);  color: var(--vp-c-brand-1); }
 .card-title { font-size: 1.1rem; font-weight: 700; margin: 0 0 0.6rem; letter-spacing: -0.01em; }
 .card-desc { font-size: 0.875rem; color: var(--vp-c-text-2); line-height: 1.7; flex: 1; margin: 0 0 1.25rem; }
 .card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
