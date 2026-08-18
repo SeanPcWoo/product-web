@@ -33,6 +33,7 @@ import ChangelogEntry from '../../../.vitepress/theme/components/ChangelogEntry.
 ```bash
 armory install @nic_drv/ifethtool@1.0.1-beta
 ```
+ <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/nic_drv/ifethtool/1.0.2-beta" target="_blank" rel="noopener noreferrer">ifethtool Armory 包详情</a></p>
 
 ## 快速上手
 

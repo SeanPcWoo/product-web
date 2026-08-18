@@ -23,7 +23,6 @@ export default defineConfig({
         text: '产品',
         items: [
           { text: '网卡驱动库', link: '/products/nic-driver/' },
-          { text: '网络产品', link: '/products/network-products/' },
           { text: '网络协议', link: '/products/protocols/' },
           { text: '网络工具', link: '/products/tools/' },
           { text: '开发工具', link: '/products/dev-tools/' },
@@ -148,40 +147,32 @@ export default defineConfig({
           ],
         },
       ],
-      '/products/network-products/': [
-        {
-          text: '网络产品',
-          items: [
-            { text: '产品列表', link: '/products/network-products/' },
-          ],
-        },
-        {
-          text: 'FRRouting（动态路由）',
-          collapsed: false,
-          items: [
-            { text: '概述', link: '/products/network-products/frr/' },
-            { text: '快速开始', link: '/products/network-products/frr/quick-start' },
-            { text: '软件架构', link: '/products/network-products/frr/architecture' },
-            { text: '配置与使用', link: '/products/network-products/frr/configuration' },
-          ],
-        },
-        {
-          text: 'ring-suit（环网冗余）',
-          collapsed: false,
-          items: [
-            { text: '概述', link: '/products/network-products/ring-suit/' },
-            { text: '快速开始', link: '/products/network-products/ring-suit/quick-start' },
-            { text: '配置指南', link: '/products/network-products/ring-suit/configuration' },
-            { text: '选型指南', link: '/products/network-products/ring-suit/selection' },
-            { text: '收敛测试', link: '/products/network-products/ring-suit/convergence' },
-          ],
-        },
-      ],
       '/products/protocols/': [
         {
           text: '网络协议',
           items: [
             { text: '模块概述', link: '/products/protocols/' },
+            {
+              text: 'FRRouting（动态路由）',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/products/protocols/frr/' },
+                { text: '快速开始', link: '/products/protocols/frr/quick-start' },
+                { text: '软件架构', link: '/products/protocols/frr/architecture' },
+                { text: '配置与使用', link: '/products/protocols/frr/configuration' },
+              ],
+            },
+            {
+              text: 'ring-suit（环网冗余）',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/products/protocols/ring-suit/' },
+                { text: '快速开始', link: '/products/protocols/ring-suit/quick-start' },
+                { text: '配置指南', link: '/products/protocols/ring-suit/configuration' },
+                { text: '选型指南', link: '/products/protocols/ring-suit/selection' },
+                { text: '收敛测试', link: '/products/protocols/ring-suit/convergence' },
+              ],
+            },
             {
               text: 'IgH EtherCAT',
               collapsed: false,

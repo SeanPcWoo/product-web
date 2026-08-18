@@ -29,6 +29,15 @@ import ChangelogEntry from '../../.vitepress/theme/components/ChangelogEntry.vue
 - 支持 TCP/IPv4 和 UDP/IPv4
 - 单网卡最多 64 个并发流（可配置）
 
+## 安装
+
+从 Armory 获取 `xgro` 包并安装：
+
+```bash
+armory install @sylixos-middleware/xgro@2.0.0
+```
+ <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/sylixos-middleware/xgro/2.0.0" target="_blank" rel="noopener noreferrer">xgro Armory 包详情</a></p>
+
 ## 使用方法
 
 模块加载后在 Shell 中注册 `xgro` 命令：

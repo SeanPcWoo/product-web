@@ -73,6 +73,36 @@ import PlatformCard from '../../.vitepress/theme/components/PlatformCard.vue'
   :tags="['物联网', '发布订阅', 'QoS']"
 />
 
+<PlatformCard
+  href="./ring-suit/"
+  chip="ring-suit"
+  manufacturer="南京翼辉网络部"
+  pkg="ring-suit"
+  status="stable"
+  statusLabel="稳定"
+  :specs="[
+    { value: 'RSTP/ERPS/MRP', label: '协议' },
+    { value: '环网冗余', label: '能力' },
+    { value: '套件', label: '类型' },
+  ]"
+  :tags="['环网冗余', '工业以太网', '链路保护']"
+/>
+
+<PlatformCard
+  href="./frr/"
+  chip="FRRouting"
+  manufacturer="南京翼辉网络部"
+  pkg="frr"
+  status="stable"
+  statusLabel="稳定"
+  :specs="[
+    { value: 'v1.0.0', label: 'SDK' },
+    { value: 'FRR 10.2', label: '基线' },
+    { value: 'OSPF/BFD', label: '协议' },
+  ]"
+  :tags="['动态路由', 'OSPF', 'BFD', 'vtysh']"
+/>
+
 </div>
 
 ## 后续规划

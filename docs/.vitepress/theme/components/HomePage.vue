@@ -64,20 +64,19 @@
               <span class="card-link">了解详情 <ArrowRight :size="13" class="card-arrow" /></span>
             </div>
           </a>
-          <a :href="withBase('/products/network-products/')" class="card">
+          <div class="card card--coming">
             <div class="card-top">
-              <div class="card-icon-wrap">
-                <Rocket :size="26" :stroke-width="1.5" class="card-icon-svg" />
+              <div class="card-icon-wrap card-icon-wrap--coming">
+                <Rocket :size="26" :stroke-width="1.5" class="card-icon-svg card-icon--coming" />
               </div>
-              <span class="card-tag tag-active">活跃开发</span>
+              <span class="card-tag tag-coming">即将推出</span>
             </div>
             <h3 class="card-title">网络产品</h3>
-            <p class="card-desc">面向工业现场与行业场景提供独立网络产品与解决方案，覆盖环网冗余、动态路由和链路可靠性等能力。</p>
+            <p class="card-desc">面向市场的独立网络产品，正在规划中，敬请期待。</p>
             <div class="card-footer">
-              <code class="card-ver">ring-suit / frr</code>
-              <span class="card-link">了解详情 <ArrowRight :size="13" class="card-arrow" /></span>
+              <span class="card-coming-hint">Coming Soon</span>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>

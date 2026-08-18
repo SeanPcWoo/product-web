@@ -8,15 +8,14 @@
 
 <div class="armory-card">
   <div class="armory-card-title">从 Armory 获取 ring-suit 套件</div>
-  <p>先设置目标板卡远端地址，再安装环网冗余套件：</p>
 
 ```bash
-armory remote set default="remote://username:password@board_ip"
-armory install @nic_drv/ring-suit
+armory install @nic_drv/ring-suit@1.0.0
 ```
 
   <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/nic_drv/ring-suit/1.0.0" target="_blank" rel="noopener noreferrer">ring-suit Armory 包详情</a></p>
 </div>
+
 ## 能力概览
 
 | 能力 | 说明 | 典型场景 |

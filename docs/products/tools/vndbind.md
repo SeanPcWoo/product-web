@@ -22,6 +22,15 @@ import ChangelogEntry from '../../.vitepress/theme/components/ChangelogEntry.vue
 
 `vndbind` 用于创建一个「附生」在物理网卡上的 SylixOS VND（虚拟网卡），借助物理网卡链路完成网络通信。多个虚拟网卡可同时绑定同一物理网卡。
 
+## 安装
+
+从 Armory 获取 `vndpind` 包并安装：
+
+```bash
+armory install @sylixos-middleware/vndbind@1.2.0
+```
+ <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/sylixos-middleware/vndbind/1.2.0" target="_blank" rel="noopener noreferrer">vndbind Armory 包详情</a></p>
+
 ## MAC 地址过滤
 
 虚拟网卡的 MAC 地址与物理网卡不同，工具提供两种过滤机制：

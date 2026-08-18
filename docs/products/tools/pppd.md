@@ -22,6 +22,15 @@ import ChangelogEntry from '../../.vitepress/theme/components/ChangelogEntry.vue
 
 `pppd` 是基于 SylixOS lwIP 网络协议栈的 PPP 拨号服务器守护进程，支持串口 PPP（PPPoS）连接，提供 PAP/CHAP 认证、自动重连和后台运行能力。
 
+## 安装
+
+从 Armory 获取 `pppd` 包并安装：
+
+```bash
+armory install @sylixos-middleware/pppd@1.1.0
+```
+ <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/sylixos-middleware/pppd/1.1.0" target="_blank" rel="noopener noreferrer">pppd Armory 包详情</a></p>
+
 ## 前置条件
 
 使用前需在 SylixOS 内核中启用 PPP 服务器支持，编辑 `libsylixos/SylixOS/net/lwip/lwip_config.h`：
