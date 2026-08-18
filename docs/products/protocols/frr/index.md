@@ -11,11 +11,10 @@ FRR 适合需要路由协议互通、链路故障检测、路由自动收敛和�
   <p>根据目标板卡远端地址安装 FRRouting 套件。包名和链接可按实际 Armory 发布信息调整：</p>
 
 ```bash
-armory remote set default="remote://username:password@board_ip"
-armory install @nic_drv/frr
+armory install @nic_drv/frr@1.0.0
 ```
 
-  <p class="armory-card-link">详细内容参考：<a href="TODO: 请填写 FRRouting Armory 包详情链接" target="_blank" rel="noopener noreferrer">FRRouting Armory 包详情</a></p>
+  <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/nic_drv/frr" target="_blank" rel="noopener noreferrer">FRRouting Armory 包详情</a></p>
 </div>
 
 ## 能力概览

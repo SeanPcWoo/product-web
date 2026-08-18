@@ -4,6 +4,18 @@ MQTT（Message Queuing Telemetry Transport）是一种轻量级的物联网通�
 
 MQTT 常用于物联网数据采集、M2M 通信、消息推送、智能设备、车联网、智慧城市、远程医疗、电力能源等领域。
 
+## Armory 获取
+
+<div class="armory-card">
+  <div class="armory-card-title">从 Armory 获取 MQTT SDK</div>
+
+```bash
+armory install @sylixos-middleware/mqtt@1.0.0
+```
+
+  <p class="armory-card-link">详细内容参考：<a href="http://10.7.1.31/acohub/armory/package/sylixos-middleware/mqtt" target="_blank" rel="noopener noreferrer">MQTT Armory 包详情</a></p>
+</div>
+
 ## 协议特点
 
 - **发布/订阅模型**：客户端不需要知道对端地址，只需要围绕 Topic 发布或订阅消息。
@@ -106,3 +118,27 @@ MQTT 由多种控制报文组成，常见报文如下：
 - [OASIS MQTT 5.0 标准](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html)
 - [Eclipse Paho MQTT C Client](https://eclipse.dev/paho/index.php?page=clients/c/index.php)
 
+<style>
+.armory-card {
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(59,130,246,.08), rgba(34,197,94,.05));
+}
+.armory-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
+  margin-bottom: 0.4rem;
+}
+.armory-card p {
+  margin: 0.45rem 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+}
+.armory-card-link a {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+</style>
